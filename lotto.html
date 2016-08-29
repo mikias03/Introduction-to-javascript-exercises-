@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+<head>
+    <script>
+        var amount;
+        var count = 0;
+        var random_num;
+        var random_num_2;
+        var lotto_num;
+        var collect = [];
+        var amount_txt = prompt("How many rounds?");
+        amount = parseInt(amount_txt);
+        while (true) {
+          count++;
+          random_num = Math.random() * 39;
+          random_num_2 = Math.floor(random_num);
+          lotto_num = random_num_2 + 1;
+          collect.push(lotto_num);
+          if (count==amount) {
+            break;
+          }
+
+
+        }
+        alert(collect.join(" , "));
+
+
+
+    </script>
+</head>
+</html>

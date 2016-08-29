@@ -1,0 +1,18 @@
+<!doctype html>
+<html>
+  <head>
+    <script>
+    var money, chocolate_bought, cost;
+    var cost = 12;
+    chocolate_bought = 0;
+    money = parseInt(prompt("How much money do have?"));
+    while (money >= cost) {
+      money = money - cost;
+      chocolate_bought ++;
+    }
+    document.write("The cost of a chocolate is " + cost + " dollars. </br>" +
+    "You have bought " + chocolate_bought + " chocolates. </br>" +
+    "You have " + money + " dollars left.")
+    </script>
+  </head>
+</html>

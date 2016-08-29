@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+  <head></head>
+  <body onload="check_age()">
+    <h1>This page is for adult's only</h1>
+<script>
+function User_age() {
+  var text,age;
+  text=prompt("What is your age?");
+  age=parseInt(text);
+  return age;
+}
+function check_age() {
+  if (User_age() < 18) {
+    alert("You are not allowed to be on this page. Please leave now!");
+  }
+  else {
+    alert("Welcome! you decalared yourself an adult!");
+  }
+}
+</script>
+  </body>
+</html>

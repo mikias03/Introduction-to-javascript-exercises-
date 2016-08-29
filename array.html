@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+  <head>
+    <script>
+    var number = 100;
+    var pet = [1,2,3,"Mikias", "Broda"];
+    pet[2]="Names";
+    alert(pet.join(" || "));
+    alert(pet[2]);
+    alert(pet.length);
+    pet.push(number);
+    alert(pet.join(" || "));
+    pet.unshift(0);
+    alert(pet.join(" || "));
+    var result = pet.pop();
+    alert(result);
+    var result2 = pet.shift();
+    alert(result2);
+    alert(pet.join(" || "));
+    var final = pet.concat(result);
+    alert(final.join());
+
+    </script>
+  </head>
+</html>

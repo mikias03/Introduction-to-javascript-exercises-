@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+  <head>
+    <script>
+    function myFunction(){
+    //alert
+      alert("welcome to hell");
+      //confirm
+      if (confirm("do you want to vist habeshaway?")) {
+        document.location.href="http://www.habeshaway.com/";
+      }
+      //prompt
+      var countryName;
+      countryName=prompt("Where are you from?");
+      document.write(countryName + " is a lovely country! I am also from "+ countryName);
+      //typeof
+      var pupppies = 3;
+      pupppies = "cute";
+      pupppies = parseInt("34.5");
+      alert('"john" is type: '+ typeof "john" + "\n\n"
+            + "3.14 is type: " + typeof 3.14 + "\n\n"
+            + "false is type: " + typeof false + "\n\n"
+            + pupppies + " is type: " + typeof pupppies);
+      }
+    </script>
+  </head>
+  <body onload="myFunction()">
+
+  </body>
+</html>
